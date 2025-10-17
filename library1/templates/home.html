@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>welcome to the homepage</h1>
+<a href="{% url 'books:home' %}">home</a>
+<a href="{% url 'books:addbooks' %}">addbook</a>
+<a href="{% url 'books:viewbooks' %}">viewbook</a>
+<a href="{% url 'users:login' %}">login</a>
+<a href="{% url 'users:register' %}">register</a>
+<a href="{% url 'users:logout' %}">logout</a>
+<form class="d-flex" action="{% url 'books:search' %}" >
+    <input class="form-control" type="search" name="q" placeholder="Search" >
+    <button class="btn btn-outline-success" type="submit">search</button>
+</form>
+</body>
+</html>

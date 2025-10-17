@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h4>searcged data</h4>
+<table class="table table-bordered">
+    <tr>
+        <th>cover</th>
+        <th>title</th>
+        <th>author</th>
+        <th>price</th>
+        <th>pages</th>
+        <th>language</th>
+    </tr>
+    {% for i in books %}
+    <tr>
+        <td><img src="{{i.image.url}}" height="100px" width="100px"></td>
+        <td>{{i.title}}</td>
+        <td>{{i.author}}</td>
+        <td>{{i.price}}</td>
+        <td>{{i.pages}}</td>
+        <td>{{i.language}}</td>
+
+    </tr>
+    {% endfor %}
+</body>
+</html>
